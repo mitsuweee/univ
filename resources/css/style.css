@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+}
+
+.News{
+    min-height: 100vh;
+    background-image: linear-gradient(#0477bf, #0477bf);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 10vh;
+}
+
+.card1{
+    background-color: #f2dea2bc;
+    overflow: hidden;
+}
+
+.gallery{
+    overflow: hidden;
+}
+
+.card2{
+    background-color: #f2dea2bc;
+    overflow: hidden;
+}
