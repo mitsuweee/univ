@@ -102,6 +102,7 @@ html{
     display: flex;
     flex-direction: column;
     gap: 15px;
+    
 }
 .cards:hover {
     box-shadow: 0 8px 16px #e0ddcf6f(0, 0, 0, 0.2);
@@ -110,15 +111,30 @@ html{
 }
 .card1{
     background: #e0ddcf6f;
+    background-size: cover; /* This makes the background image cover the entire element */
+    background-repeat: no-repeat;
+    background-position: center center; /* This centers the background image */
+    /* Add other styles as needed */
+    
 }
 .cards .red {
     background-color: #284B63;
+    max-width: 100%;
+
+    
+    
 } 
 .cards .blue {
     background-color: #284B63;
+    max-width: 100%;
+   
+  
 }
 .cards .green {
     background-color: #284B63;
+    max-width: 100%;
+    
+    
 }  
 .cards .card {
     display: flex;
@@ -156,6 +172,10 @@ html{
 .cards .btn:hover {
     background-color: #333; 
 }
+
+/* resize */
+
+/* Default styles for cards container */
 .loading-screen {
     position: fixed;
     top: 0;
