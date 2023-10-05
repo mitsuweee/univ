@@ -227,19 +227,3 @@ html{
     }
   }
 
-  /* back to top */
-.gotopbtn{
-    position: fixed;
-    width: 50px;
-    height: 50px;
-    background: #333;
-    bottom: 40px;
-    right: 50px;
-
-    text-decoration: none;
-    text-align: center;
-    line-height: 50px;
-    color: #fff;
-    font-size: 22px;
-}
-
