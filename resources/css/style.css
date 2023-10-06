@@ -102,7 +102,9 @@ html{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    
+}
+.card.admission-card {
+    max-width: 100%;
 }
 .cards:hover {
     box-shadow: 0 8px 16px #e0ddcf6f(0, 0, 0, 0.2);
@@ -119,23 +121,16 @@ html{
 }
 .cards .red {
     background-color: #284B63;
-    max-width: 100%;
-
-    
-    
 } 
 .cards .blue {
     background-color: #284B63;
-    max-width: 100%;
-   
-  
+    
 }
 .cards .green {
     background-color: #284B63;
-    max-width: 100%;
-    
-    
-}  
+}
+
+
 .cards .card {
     display: flex;
     align-items: center;
@@ -168,15 +163,11 @@ html{
     font-size: 17px;
     margin: 10px auto; 
 }
-
 .cards .btn:hover {
     background-color: #333; 
 }
-
-/* resize */
-
 /* Default styles for cards container */
-.loading-screen {
+/* .loading-screen {
     position: fixed;
     top: 0;
     left: 0;
@@ -212,9 +203,7 @@ html{
     height: 100%;
     border-radius: 30px;
     animation: moving 1s ease-in-out infinite;
-      
   }
-  
   @keyframes moving {
     50% {
       width: 100%;
@@ -225,5 +214,5 @@ html{
       right: 0;
       left: unset;
     }
-  }
+  } */
 
