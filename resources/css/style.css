@@ -7,16 +7,19 @@
 
 .News{
     min-height: 100vh;
-    background-image: linear-gradient(#0477bf, #0477bf);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 10vh;
+    margin-left: -200px;
 }
 
 .card1{
-    background-color: #f2dea2bc;
+    background-color: #284b63c0;
     overflow: hidden;
+    height: 85vh;
+    border-radius: 30px;
+    
 }
 
 .gallery{
@@ -24,6 +27,88 @@
 }
 
 .card2{
-    background-color: #f2dea2bc;
+    background-color: #284b63a4;  
     overflow: hidden;
+    height: 85vh;
+    width: 120vh;
+    border-radius: 30px;
 }
+
+
+.News::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/MAANGAS\ NA\ BG.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px); 
+    opacity: 0.7; 
+    z-index: -1; 
+    animation: changeBackground 24s linear infinite;
+}
+
+.with-divider {
+    position: relative; /* Ensure relative positioning for the parent element */
+    color: #e0ddcf;
+}
+
+.with-divider::after {
+    content: ""; /* Create an empty content element */
+    display: block; /* Display as a block element */
+    height: 2px; /* Adjust the height of the divider as needed */
+    width: 95%; /* Adjust the width of the divider as needed */
+    background-color: #ffffff; /* Change the color of the divider as needed */
+    position: absolute; /* Position absolutely relative to the parent */
+    bottom: -3px; /* Adjust the distance of the divider from the text */
+    left: 0; /* Align the divider to the left of the parent */
+}
+
+.column1{
+    margin-left: -150px;
+}
+
+.card-container {
+    display: flex; /* Use flexbox for the container */
+    justify-content: space-between; /* To space the cards horizontally */
+    padding-top: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.card {
+    margin-left: 20px;/* Add styling for individual cards if needed */
+    margin-right: 20px; /* Add margin between the cards if desired */
+    height: 70vh;
+}
+
+.card-text.text-dark {
+    padding-left: 5px; /* Adjust the value as needed to move it to the right */
+    padding-top: 3px;
+}
+
+.card-title{
+    color: #000000;
+    padding-left: 5px; 
+    padding-top: 3px;
+}
+
+.card-text{
+    color: rgba(0, 0, 0, 0.747);
+}
+
+.card-spacing{  
+    display: flex;
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: scale(1.05); /* Increase the size of the card when hovered */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
