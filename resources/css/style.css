@@ -80,35 +80,51 @@
 
 }
 
-.card {
-    margin-left: 20px;/* Add styling for individual cards if needed */
-    margin-right: 20px; /* Add margin between the cards if desired */
-    height: 70vh;
+
+.custom-img {
+    width: 90%; /* Adjust the width as needed */
+    height: 20x; /* Set the desired height */
+    padding-top: 15px;
+    border-radius: 30px;
+    
 }
 
-.card-text.text-dark {
-    padding-left: 5px; /* Adjust the value as needed to move it to the right */
-    padding-top: 3px;
+.image-caption-container {
+    position: relative;
+    
 }
 
-.card-title{
+.image-caption {
+    position: absolute;
+    bottom: 0; /* Position the caption at the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: rgba(255, 255, 255, 0.863); /* Optional background color for better readability */
+    color: rgb(0, 0, 0); /* Optional text color */
+    padding: 10px; /* Optional padding for the caption */
+    margin-bottom: 40px;
+    border-radius: 10px;
+
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.with-divider2 {
+    position: relative; /* Ensure relative positioning for the parent element */
     color: #000000;
-    padding-left: 5px; 
-    padding-top: 3px;
 }
 
-.card-text{
-    color: rgba(0, 0, 0, 0.747);
-}
-
-.card-spacing{  
-    display: flex;
-    justify-content: space-between;
-}
-
-.card:hover {
-    transform: scale(1.05); /* Increase the size of the card when hovered */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
-    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+.with-divider2::after {
+    content: ""; /* Create an empty content element */
+    display: block; /* Display as a block element */
+    height: 2px; /* Adjust the height of the divider as needed */
+    width: 95%; /* Adjust the width of the divider as needed */
+    background-color: #000000; /* Change the color of the divider as needed */
+    position: absolute; /* Position absolutely relative to the parent */
+    bottom: -3px; /* Adjust the distance of the divider from the text */
+    left: 0; /* Align the divider to the left of the parent */
 }
 
