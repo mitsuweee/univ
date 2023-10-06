@@ -10,24 +10,42 @@
  
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
     <link rel="stylesheet" href="resource/css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="custom.css">
+    <script src="https://kit.fontawesome.com/d5a5838c61.js" crossorigin="anonymous"></script>
 
     <title>University of Bauan</title>
 
   </head>
 
   <body>
-    <header class="header" id="">
-        <header class = "header" >
-
-          <!--Start of navbar-->    
-          <nav class="navbar navbar-expand-lg  bg-dark">
-            <a class="navbar-brand" href="#"><img src="resource/img/MALUPET NA LOGO.png" class="logo"></a>
+    <div class="loading-screen" id="loading-screen">
+        <div class="loader"></div>
+    </div>
+    <header class="header" id="header">
+        <header class = "header">
+            <div class="header-content">
+                <h1 class="big-title">University of Bauan</h1>
+            </div>
+            <div class="header-content1">
+                <h2 class="small-title">Lux et Veritas</h2>
+            </div>
+   
+     <div class="navbar-container">
+        <nav class="navbar navbar-expand-lg" style="background-color: #534B52" style="">
+            <a class="navbar-brand" href="#"><img src="resource/img/MALUPET NA LOGO.png" class="logo" class="img-fluid"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="box">
+                <input type="text" placeholder="Search..." style="background-color:#E0DDCF">
+                <a href="#">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
 
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto" style = "margin-right: 30px;">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
@@ -46,21 +64,20 @@
                 </ul>
             </div>
         </nav>
+        <div class="header-content">
+            <h1 class="big-title">University of Bauan</h1>
+        </div>
+        <div class="header-content1">
+            <h2 class="small-title">Lux et Veritas</h2>
+        </div>
+         <img src = 'resource/img/BGLOGS.png' style = " width: 100%;height: auto;" >
+         <a class="gotopbtn" href="#"><i class="fa-solid fa-angles-up" style="color: #534b52;"></i></a> 
+    </div> 
 
-            <!-- end ng navigation -->
-  
-            <!-- content -->
-            <div class="container mt-5">
-              <div class="jumbotron p-5 card1 text-dark">
-                  <h1 class="display-4" id="header-welcome">University of Bauan</h1>
-                  <p class="lead" id="content">Shaping Minds, Igniting Futures: Your Pathway to Excellence</p>
-                  <hr class="my-4 bg-dark">
-                  <p id="content content1">At Car Culture Scene, we're more than just a website; we're a community of avid car lovers, from classic car connoisseurs to high-performance aficionados and everything in between. Whether you're seeking the latest trends, in-depth reviews, event coverage, or simply looking to connect with fellow car enthusiasts, you've come to the right place.</p>
-                  <a class="btn btn-lg btn-dark btn" href="#gallery" role="button" id="content">Learn more</a>
-              </div>
-          </div>
-          <!-- end of content -->
-          </header>
+    
+    
+
+
 
    
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
@@ -70,8 +87,16 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
-
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            window.addEventListener("load", function () {
+                const loadingScreen = document.getElementById("loading-screen");
+                loadingScreen.style.opacity = "0";
+                setTimeout(function () {
+                    loadingScreen.style.display = "none";
+                }, 500); 
+            });
+        });
+    </script>
   </body>
-</html>
-
-<!-- univ ni kevs -->
+</html> 
