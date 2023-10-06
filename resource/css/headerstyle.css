@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+}
+
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F4F9E9;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 3s;
+    opacity: 4;
+}
+
+.loader {
+    display: block;
+    --height-of-loader: 4px;
+    --loader-color: #153243;
+    width: 130px;
+    height: var(--height-of-loader);
+    border-radius: 30px;
+    background-color: rgba(0,0,0,0.2);
+    position: relative;
+  }
+  
+  .loader::before {
+    content: "";
+    position: absolute;
+    background: var(--loader-color);
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 30px;
+    animation: moving 1s ease-in-out infinite;
+      
+  }
+  
+  @keyframes moving {
+    50% {
+      width: 100%;
+    }
+  
+    100% {
+      width: 0;
+      right: 0;
+      left: unset;
+    }
+  }
+ .header {
+    min-height: 100vh;
+    background-image: linear-gradient(#1c1c1cb5, #1c1c1cb5), url('../img/UNIVB.png'); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    z-index: 9;  
+} 
+ .navbar-brand img.logo {
+    width: 40px; 
+    height: auto; 
+}
+.logo{
+    height: 100px;
+}
+.navbar-brand {
+    font-size: 10px;
+    font-weight: bold;
+}
+.navbar-nav .nav-link {
+    color: #E0DDCF;
+    font-size: 18px;
+    padding: 10px 20px;
+}
+#header-welcome {
+    font-size: 36px;
+}
+.navbar-nav a:hover {
+    border-bottom: 2px solid #E0DDCF;
+}
+.body{
+    height: 100;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    background: #284B63;
+}
+.box{
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #E0DDCF;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+.box:hover input {
+    width: 150px;
+    transition: 0.9s;
+}
+.box input {
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: transparent;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+.box a .fas{
+    color: #534B52;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.section{
+    width: 100%;
+    height: 300vh;
+    background: url('../img/UNIVB.png') no-repeat;
+    background-size: cover;
+}
+.gotopbtn{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background: #E0DDCF;
+    bottom: 40px;
+    right: 40px;
+
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    color: #534B52;
+    font-size: 22px;
+
+    border: none;
+    border-radius: 10px;
+}
+.big-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 100px;
+    margin-bottom: 10px;
+    color: #284B63;
+    transition: color 0.5s, text-shadow 0.5s; 
+    text-align: center;
+    line-height: 1;
+}
+.small-title {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: 50px;
+    color: #284B63;
+    transition: color 0.5s, text-shadow 0.5s;
+    text-align: center;
+    line-height: 1;
+}
+
+
+.big-title:hover {
+    color: #E0DDCF; 
+    text-shadow: 0 0 10px #284B63; 
+}
+
+.small-title:hover {
+    color: #E0DDCF; 
+    text-shadow: 0 0 10px #284B63; 
+}
+.header-content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; 
+    z-index: 1; 
+}
+.header-content1 {
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; 
+    z-index: 1;
+} 
+
