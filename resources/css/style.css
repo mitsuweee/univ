@@ -1,0 +1,218 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+}   
+.about_us {
+    position: relative;
+    padding: 50px 0;
+}
+@keyframes changeBackground {
+    0%, 100% { background-image: url('../img/MAANGAS NA BG.png'); }
+    44.44% { background-image: url('../img/adm.jpg'); }
+    77.77% { background-image: url('../img/ADM2.jpeg'); }
+}
+.about_us::before {
+    content: "";
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(2px);
+    z-index: -1;
+    animation: changeBackground 24s linear infinite; 
+}
+.card {
+    background: #e0ddcf6f;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.card button.btn-info {
+    background-color: #153243;
+    font-family: 'Times New Roman', Times, serif;
+    width: 170px;
+    height: 40px;
+    font-size: 17px;
+    margin: 10px auto; 
+
+}
+/* Styles for the card title */
+.card h3.card-title {
+    color: #534b52;
+    text-transform: uppercase;
+}
+/* Styles for the list */
+.card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.card li {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 10px;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+.card .btn:hover {
+    background-color: #333; 
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 16px;
+    }
+    
+    .jumbotron {
+        padding: 20px;
+    }
+    
+    .card1 {
+        padding: 10px;
+    }
+}
+.fixed-image {
+    width: 300px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+}
+/*ADMISSION CARD*/
+.cards li{
+    font-size: 15px;
+    color: white;
+    margin-bottom: 2px;
+}
+.cards {
+    background: #e0ddcf6f; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.card.admission-card {
+    max-width: 100%;
+}
+.cards:hover {
+    box-shadow: 0 8px 16px #e0ddcf6f(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.card1{
+    background: #e0ddcf6f;
+    background-size: cover; /* This makes the background image cover the entire element */
+    background-repeat: no-repeat;
+    background-position: center center; /* This centers the background image */
+    /* Add other styles as needed */
+    
+}
+.cards .red {
+    background-color: #284B63;
+} 
+.cards .blue {
+    background-color: #284B63;
+    
+}
+.cards .green {
+    background-color: #284B63;
+}
+
+
+.cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 125px;
+    width: 465px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+}
+.cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+}
+.cards .card:hover {
+    transform: scale(1.1, 1.1);
+}
+.cards:hover > .card:not(:hover) {
+    filter: blur(1px);
+    transform: scale(0.9, 0.9);
+}
+.cards button.btn-info {
+    background-color: #153243;
+    font-family: 'Times New Roman', Times, serif;
+    width: 170px;
+    height: 40px;
+    font-size: 17px;
+    margin: 10px auto; 
+}
+.cards .btn:hover {
+    background-color: #333; 
+}
+/* Default styles for cards container */
+/* .loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #153243;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 3s;
+    opacity: 2;
+}
+
+.loader {
+    display: block;
+    --height-of-loader: 4px;
+    --loader-color: #0071e2;
+    width: 130px;
+    height: var(--height-of-loader);
+    border-radius: 30px;
+    background-color: rgba(0,0,0,0.2);
+    position: relative;
+  }
+  
+  .loader::before {
+    content: "";
+    position: absolute;
+    background: var(--loader-color);
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 30px;
+    animation: moving 1s ease-in-out infinite;
+  }
+  @keyframes moving {
+    50% {
+      width: 100%;
+    }
+  
+    100% {
+      width: 0;
+      right: 0;
+      left: unset;
+    }
+  } */
+
