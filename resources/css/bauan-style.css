@@ -1,0 +1,420 @@
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+}
+.logo{
+    height: 65px;
+}
+.bg-violet{
+    background-color: #B4B8AB;
+}
+.header{
+    min-height: 100vh;
+    background-image: linear-gradient(#47444877, #534b5277), url(../img/BG.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: large;
+}
+.card{
+    background-color: #b4b8ab77;
+}
+.display-4{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-shadow: 0 0 20px #E0DDCF ;
+    color: #534B52;
+    font-weight: bolder;
+}
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F4F9E9;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 3s;
+    opacity: 4;
+}
+
+.loader {
+    display: block;
+    --height-of-loader: 4px;
+    --loader-color: #153243;
+    width: 130px;
+    height: var(--height-of-loader);
+    border-radius: 30px;
+    background-color: rgba(0,0,0,0.2);
+    position: relative;
+  }
+  
+.loader::before {
+    content: "";
+    position: absolute;
+    background: var(--loader-color);
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-radius: 30px;
+    animation: moving 1s ease-in-out infinite;
+      
+}
+.box{
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    padding: 10px 20px;
+    background: #E0DDCF;
+    border-radius: 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+.box:hover input {
+    width: 150px;
+    transition: 0.9s;
+}
+.box input {
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: transparent;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+.box a .fas{
+    color: #534B52;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.gotopbtn{
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background: #E0DDCF;
+    bottom: 40px;
+    right: 40px;
+
+    text-decoration: none;
+    text-align: center;
+    line-height: 40px;
+    color: #534B52;
+    font-size: 22px;
+
+    border: none;
+    border-radius: 10px;
+}
+.navbar-nav.ml-auto .nav-link:hover {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.7);
+    transition: text-shadow 0.3s;
+    text-decoration: underline; 
+    border-bottom: 2px solid transparent; 
+    padding-bottom: 4px; 
+    font-weight: bolder;
+    font-size: large;
+    color: #534B52;
+}
+.lead {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: #E0DDCF;
+}
+.leads {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    color: #534B52;
+}
+
+.News{
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 10vh;
+    margin-left: -200px;
+    
+}
+.cards1{
+    background-color: #284b63c0;
+    overflow: hidden;
+    height: 85vh;
+    border-radius: 30px;
+    
+}
+.gallery{
+    overflow: hidden;
+}
+
+.card2{
+    background-color: #284b63a4;  
+    overflow: hidden;
+    height: 85vh;
+    width: 120vh;
+    border-radius: 30px;
+    margin-left: 5px;
+}
+
+
+.News::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../img/MAANGAS\ NA\ BG\ -\ Copy.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(4px); 
+    opacity: 0.7; 
+    z-index: -1; 
+    animation: changeBackground 24s linear infinite;
+}
+
+.with-divider {
+    position: relative; /* Ensure relative positioning for the parent element */
+    color: #e0ddcf;
+}
+
+.with-divider::after {
+    content: ""; /* Create an empty content element */
+    display: block; /* Display as a block element */
+    height: 2px; /* Adjust the height of the divider as needed */
+    width: 95%; /* Adjust the width of the divider as needed */
+    background-color: #ffffff; /* Change the color of the divider as needed */
+    position: absolute; /* Position absolutely relative to the parent */
+    bottom: -3px; /* Adjust the distance of the divider from the text */
+    left: 0; /* Align the divider to the left of the parent */
+}
+
+.column4{
+    margin-left: -80px;
+}
+
+.card-container {
+    display: flex; /* Use flexbox for the container */
+    justify-content: space-between; /* To space the cards horizontally */
+    padding-top: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+
+.custom-img {
+    width: 90%; /* Adjust the width as needed */
+    height: 20x; /* Set the desired height */
+    padding-top: 15px;
+    border-radius: 30px;
+    
+}
+
+.image-caption-container {
+    position: relative;
+    
+}
+
+.image-caption {
+    position: absolute;
+    bottom: 0; /* Position the caption at the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    background-color: rgba(255, 255, 255, 0.863); /* Optional background color for better readability */
+    color: rgb(0, 0, 0); /* Optional text color */
+    padding: 10px; /* Optional padding for the caption */
+    margin-bottom: 40px;
+    border-radius: 10px;
+
+}
+
+.carousel-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.with-divider2 {
+    position: relative; /* Ensure relative positioning for the parent element */
+    color: #000000;
+}
+
+.with-divider2::after {
+    content: ""; /* Create an empty content element */
+    display: block; /* Display as a block element */
+    height: 2px; /* Adjust the height of the divider as needed */
+    width: 95%; /* Adjust the width of the divider as needed */
+    background-color: #000000; /* Change the color of the divider as needed */
+    position: absolute; /* Position absolutely relative to the parent */
+    bottom: -3px; /* Adjust the distance of the divider from the text */
+    left: 0; /* Align the divider to the left of the parent */
+}
+
+.about_us {
+    position: relative;
+    padding: 50px 0;
+}
+@keyframes changeBackground {
+    0%, 100% { background-image: url('../img/MAANGAS NA BG.png'); }
+    44.44% { background-image: url('../img/adm.jpg'); }
+    77.77% { background-image: url('../img/ADM2.jpeg'); }
+}
+.about_us::before {
+    content: "";
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: blur(2px);
+    z-index: -1;
+    animation: changeBackground 24s linear infinite; 
+}
+.card{
+    background: #e0ddcf6f;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.card button.btn-info {
+    background-color: #153243;
+    font-family: 'Times New Roman', Times, serif;
+    width: 170px;
+    height: 40px;
+    font-size: 17px;
+    margin: 10px auto; 
+
+}
+/* Styles for the card title */
+.card h3.card-title {
+    color: #534b52;
+    text-transform: uppercase;
+}
+/* Styles for the list */
+.card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+.card li {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 10px;
+}
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+.card .btn:hover {
+    background-color: #333; 
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        font-size: 16px;
+    }
+    
+    .jumbotron {
+        padding: 20px;
+    }
+    
+    .card1 {
+        padding: 10px;
+    }
+}
+.fixed-image {
+    width: 300px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+}
+/*ADMISSION CARD*/
+.cards li{
+    font-size: 15px;
+    color: white;
+    margin-bottom: 2px;
+}
+.cards {
+    background: #e0ddcf6f; 
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.card.admission-card {
+    max-width: 100%;
+}
+.cards:hover {
+    box-shadow: 0 8px 16px #e0ddcf6f(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.card1{
+    background: #e0ddcf6f;
+    background-size: cover; /* This makes the background image cover the entire element */
+    background-repeat: no-repeat;
+    background-position: center center; /* This centers the background image */
+    /* Add other styles as needed */
+    
+}
+.cards .red {
+    background-color: #284B63;
+} 
+.cards .blue {
+    background-color: #284B63;
+    
+}
+.cards .green {
+    background-color: #284B63;
+}
+
+
+.cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 125px;
+    width: 465px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+}
+.cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+}
+.cards .card:hover {
+    transform: scale(1.1, 1.1);
+}
+.cards:hover > .card:not(:hover) {
+    filter: blur(1px);
+    transform: scale(0.9, 0.9);
+}
+.cards button.btn-info {
+    background-color: #153243;
+    font-family: 'Times New Roman', Times, serif;
+    width: 170px;
+    height: 40px;
+    font-size: 17px;
+    margin: 10px auto; 
+}
+.cards .btn:hover {
+    background-color: #333; 
+}
+
+
